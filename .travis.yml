@@ -63,7 +63,7 @@ jobs:
     #
     ##########################################################################################
     - stage: prereq-init
-      if: commit_message =~ /Rebuild prereq docker/
+      if: commit_message =~ /Rebuild prereq docker./
       arch:
         - s390x
       script:
